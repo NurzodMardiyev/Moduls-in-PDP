@@ -1,0 +1,36 @@
+@mixin button($color, $bg, $borderColor) {
+  display: inline-block;
+  text-decoration: none;
+  color: $color;
+  background-color: $bg;
+  border: 1px solid $borderColor;
+  border-radius: 10px;
+  padding: 12px 25px;
+  
+  &:hover {
+background-color: $color;
+    color: $bg;
+  }
+}
+.btn1 {
+  @include button(#fff, #000, #000);
+}
+.btn2 {
+  @include button(orange, rgb(31, 153, 194), orange);
+
+  
+}
+
+@mixin heading () {
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  @content;
+}
+.heading {
+  h1 {
+    @include heading() {
+      color: red;
+    }
+  }
+}

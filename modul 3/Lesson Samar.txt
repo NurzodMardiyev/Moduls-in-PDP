@@ -1,0 +1,25 @@
+6-Dars
+malumot turlari 2ga bo'linadi
+Primitive va Object
+Boolen       Array
+string	     Object
+namber	     Function
+Null	     Regex
+undefine     Date
+symbol
+
+-Infinity malumot turi bu cheksiz hisoblanadi
+-NAN son emas misol uchun stringni 8ga ko'paytirsak
+-Srting "", '', ``, orqali yoziladi
+-Boolen bu ikkita qiymat qabul qiladi true (1) va false (0)
+-Null deylik o'zgaruvchi elon qilmadik va uni chaqirdik musol uchun console.log(isCircleEarth); bunda consulega null chiqadi
+-Undefined bunda o'zgaruvchi elon qildik lekin ichiga hecch narsa yozmadik va consolega undefined chiqadi.
+
+Object
+bu obyektda misol uchun nimanidir tariflash un unga 2 va undan yuqorri hususiyat beramiz
+misol uchun PDP academy chiroyli, sifatli talim, hamyonbob
+let PDP = {
+talim: sifatli,
+ko'rinish: chiroyli,
+narxi: homyonbob
+}

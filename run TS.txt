@@ -1,0 +1,19 @@
+1. npm init -y
+2. npm i --save-dev typescript
+3. npx tsc --init
+4. outDir ./JS
+5. "start": "tsc --watch"
+6. npm start
+7. npm i uuid
+8. import {v4 as uuidV4} from "uuid";
+	uuidV4();
+9. "module": "es6",
+10. delete all files
+11. npx create-snowpack-app . --template @snowpack/app-template-blank-typescript --force
+12 npm start
+13 <script src="JS/script.js" type="module"></script>
+14 npm i uuid
+15 import {v4 as uuidV4} from "uuid";
+	uuidV4();
+
+

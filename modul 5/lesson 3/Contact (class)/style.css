@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+img {
+  border-radius: 50%;
+  width: 100%;
+}
+.createContact {
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.yourImg {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.yourImg > img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.yourImg span {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+.yourImg > span img {
+  width: 100%;
+  border-radius: 50%;
+}
+.inputEl {
+  width: 100%;
+}
+.inputEl input {
+  border: 0;
+  border-radius: 2px;
+  outline: 0;
+}
+.createForm {
+  background-color: rgb(180, 180, 180);
+  width: 100%;
+  border-radius: 10px;
+}
+.contacts {
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.serachForm span {
+  padding: 0px 15px;
+  display: flex;
+  border-right: 1px solid #333;
+}
+.serachForm input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  padding: 6px 10px 7px 60px !important;
+}
+.serachForm button {
+  right: 0;
+  border: none;
+  background-color: inherit;
+  border-left: 1px solid #333;
+  padding: 0px 10px;
+}
+.user_img {
+  width: 60px;
+  height: 60px;
+}
+.treNuft {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 10px;
+}
+.treNuft span {
+  display: flex;
+  width: 2px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 50%;
+}
+.list {
+  border-bottom: 1px solid #333;
+}
+.star {
+  cursor: pointer;
+}

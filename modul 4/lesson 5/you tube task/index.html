@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Own version</title>
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <form
+          class="col-md-6 offset-md-3 bg-white rounded-2 mt-5"
+          id="todoForm"
+        >
+          <div class="container">
+            <h1 class="text-center mt-2">Todo Own version</h1>
+
+            <!-- Add New Information -->
+            <div class="mb-3 input-group">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+              <button class="btn btn-primary">Add</button>
+            </div>
+            <!-- Create new information -->
+            <div class="alert__box" id="createTodo">
+              <!-- <div
+                class="alert alert-dark d-flex align-items-center gap-2 justify-content-between"
+                role="alert"
+              >
+                <div class="input-group" id="editTodoEl">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Recipient's username"
+                    readonly
+                  />
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="submit"
+                    id="button-addon2"
+                  >
+                    Save
+                  </button>
+                </div>
+                <div class="d-flex gap-2">
+                  <buttun class="btn btn-success" onclick="editRender()"
+                    >edit</buttun
+                  >
+                  <buttton class="btn btn-danger">delate</buttton>
+                </div> 
+              </div>-->
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

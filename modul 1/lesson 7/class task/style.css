@@ -1,0 +1,86 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+
+.psedu::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+
+}
+.psedu::after {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+
+}
+.firstLetter::first-letter {
+  font-size: 30px;
+  color: blue;
+  font-weight: 800;
+}
+.firstLetter::first-line {
+  text-decoration: underline;
+}
+
+/* ::marker {
+  color: blue;
+}  */
+ul:first-child{
+  color: red;
+  font-weight: bold;
+}
+/* 
+button:focus {
+  background-color: red;
+}
+
+button:active {
+  width: 100px;
+} */
+.btn {
+  width:100px;
+  height: 30px;
+  border-radius: 10px;
+  transform: translateX(200px) translateY(200px);
+  transition: all 2s ;
+}
+.btn:hover {
+  background-color: aqua;
+ 
+}
+.btn:focus {
+  transform: translateX(100px) translateY(20px) scale(2) rotate(720deg);
+}
+
+.pseduClass li:first-child {
+  color: red;
+}
+
+@keyframes rotate {
+  from{
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+    background-color: red;
+  }
+}
+
+.click {
+  background-color: blue;
+  color: #fff;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 5s;
+  animation-fill-mode: backwards;
+}

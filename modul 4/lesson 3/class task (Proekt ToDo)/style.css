@@ -1,0 +1,10 @@
+.list-group-item:hover {
+  background-color: aliceblue;
+}
+.row > * {
+  padding: 0;
+}
+.edit-user:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0) !important;
+}

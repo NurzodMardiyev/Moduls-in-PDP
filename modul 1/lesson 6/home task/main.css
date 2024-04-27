@@ -1,0 +1,13 @@
+/* prezintation */
+
+.prezintation > h2 ~ p {
+  background-color: yellow;
+}
+
+.prezintation > div ~ p {
+background-color: #fff;
+}
+
+.prezintation > code + p {
+  background-color: yellow;
+}

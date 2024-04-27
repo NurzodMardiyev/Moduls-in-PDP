@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./images/pizza 1.png" />
+  </head>
+  <body>
+    <div id="pizza">
+      <div class="pizza__wrapper">
+        <h1>Pizza Order</h1>
+        <form action="" id="formTag">
+          <input type="text" id="userName" placeholder="User name" />
+          <input type="numbeer" id="phoneNumber" placeholder="Phone number" />
+          <input type="text" id="userAdress" placeholder="User adress" />
+
+          <div class="thickness">
+            <span>Dough Thickness</span>
+            <div class="thickOptions">
+              <button id="noneOption">None</button>
+              <div class="options">
+                <button>Thin</button>
+                <button>Medium</button>
+                <button>Thick</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="size">
+            <span>Size</span>
+            <a href="#">22sm</a>
+            <a href="#">33sm</a>
+            <a href="#">55sm</a>
+          </div>
+
+          <div class="product">
+            <span>On Pizza</span>
+            <div class="products">
+              <label for="tomato">
+                <input id="tomato" type="checkbox" /> Tmato
+              </label>
+              <label for="turkMeal">
+                <input id="turkMeal" type="checkbox" /> Turkey meal
+              </label>
+              <label for="cucumber">
+                <input id="cucumber" type="checkbox" /> Packet Cocumber
+              </label>
+              <label for="mushroom">
+                <input id="mushroom" type="checkbox" /> Mushroom
+              </label>
+              <label for="olivie">
+                <input id="olivie" type="checkbox" /> Olivie
+              </label>
+              <label for="horseMeal">
+                <input id="horseMeal" type="checkbox" /> Horse meal
+              </label>
+            </div>
+          </div>
+
+          <div class="taste">
+            <span>Add:</span>
+            <div class="tastes">
+              <label for="pepper">
+                <input id="pepper" type="checkbox" /> Pepper
+              </label>
+              <label for="sausages">
+                <input id="sausages" type="checkbox" /> Sausages
+              </label>
+            </div>
+          </div>
+        </form>
+
+        <button id="submit">Save</button>
+      </div>
+      <div class="pizza__result">
+        
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

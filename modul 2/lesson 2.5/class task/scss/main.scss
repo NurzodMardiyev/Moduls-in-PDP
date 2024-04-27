@@ -1,0 +1,73 @@
+$primeryColor: red;
+$borderStyle: (
+  width: 1px,
+  style: solid,
+  color: red
+);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// .heading {
+//   color: $primeryColor;
+// }
+// .box {
+
+//   display: flex;
+//   font-size: 20px;
+//   font-weight: 500;
+//   color: blue;
+// }
+
+// .parent {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   .child {
+//     width: 100px ;
+//     height: 100px;
+//     background-color: $primeryColor;
+
+//     h1 {
+//       color: blue;
+//     }
+//   }
+// }
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__child {
+    background-color: blue;
+
+    &-info {
+      color: $primeryColor;
+    }
+  }
+
+}
+
+.btn {
+  margin: 50px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: lightblue;
+  @each $key, $value in $borderStyle {
+    border-#{$key}: $value;
+  }
+  border-radius: 5px;
+  transition: all .3s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background-color: black;
+  }
+}

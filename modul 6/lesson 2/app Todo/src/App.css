@@ -1,0 +1,78 @@
+/* Form Section (input and button) */
+.inputForm {
+  display: flex;
+  width: 600px;
+  margin: auto;
+  margin-top: 30px;
+}
+.inputForm input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-right: 1px solid #333;
+}
+.inputForm button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgb(0, 217, 255);
+}
+.form button span {
+  text-shadow: 1px 2px 3px rgb(107, 107, 107);
+}
+.form button span:active {
+  display: inline-block;
+  transform: translateY(1px);
+}
+
+/* Weather app section */
+.headTable {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #333;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 30px;
+  align-items: center;
+}
+.headTable > p {
+  width: 140px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.headTable .task {
+  width: 180px;
+}
+.headTable .no {
+  width: 50px;
+}
+.bodyTable {
+  display: flex;
+  gap: 10px;
+  max-width: 700px;
+  margin: auto;
+  padding: 10px 0;
+  align-items: center;
+  border-bottom: 1px solid green;
+}
+
+.bodyTable > p {
+  width: 140px;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+}
+.bodyTable > p button {
+  padding: 5px 15px;
+}
+.bodyTable .task {
+  width: 180px;
+}
+.bodyTable .status,
+.bodyTable .edit {
+  justify-content: center;
+}
+.bodyTable .no {
+  width: 50px;
+}

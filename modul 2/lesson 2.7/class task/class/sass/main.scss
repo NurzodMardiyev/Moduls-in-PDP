@@ -1,0 +1,61 @@
+@function add($num1, $num2){
+  @return $num1 + $num2;
+}
+
+.box{
+  font-size: add(6, 7px );
+}
+
+
+// .box{
+//   color: red;
+// }
+
+// $son1: 10;
+// $son2: 5;
+// $borderRadius: add($son1, $son2);
+
+// .box{
+// border-radius:$borderRadius ;
+// }
+// $bg: darken(#ff0000, 10%);
+// $bg2: lightem(#ff0000, 10%);
+// $bg3: mix(#000, #ff0000, 30%);
+// $bg4: invert(#ff00ff);
+
+// .box{
+//   background-color: $bg4;
+// }
+
+// @mixin button($color, $bg, $borderColor){
+//   display: inline-block;
+//   text-decoration: none;
+//   padding: 15px 25px;
+// font-size: 20px;
+// color: $color;
+// background-color: $bg;
+// border: 1px solid $borderColor;
+// transition: all 0.3s ease;
+
+// &:hover{
+//   background-color: $color;
+//  @if $bg == transparent{
+//   color: white;
+//  }
+//  @else{
+//   color: $bg;
+//  }
+// }
+// }
+
+
+// body{
+//   background-color: red;
+// }
+// .btn-primary{
+//   @include button(white, black, black)
+// }
+
+// .btn-outline{
+//   @include button(black, transparent,transparent )
+// }

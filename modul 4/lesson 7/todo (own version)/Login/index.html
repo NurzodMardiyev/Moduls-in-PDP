@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <style>
+      .show {
+        display: flex !important;
+      }
+      .hide {
+        display: none !important;
+      }
+      .login_Sign {
+        width: 400px !important;
+      }
+    </style>
+  </head>
+  <body class="w-100 h-100 d-flex align-items-center justify-content-center">
+    <div
+      class="login d-flex align-items-center justify-content-center w-100 h-100 mt-4 flex-column"
+    >
+      <form class="login_Sign d-flex flex-column gap-2" id="signUpForm">
+        <h2>Register</h2>
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <button class="loginBtn" id="signUp">Sign Up</button>
+      </form>
+
+      <form class="login_Sign d-none flex-column gap-2" id="signInForm">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <button class="loginBtn" id="signIn">Sign In</button>
+      </form>
+      <p>If you have login password btn <a href="#" class="here">here</a></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./loginJs.js"></script>
+  </body>
+</html>

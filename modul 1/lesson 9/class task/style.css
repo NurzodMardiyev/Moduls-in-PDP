@@ -1,0 +1,30 @@
+.box1 {
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 40px;
+  background-color: aqua;
+  display: inline-block;
+} 
+.box2 {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 40px;
+  background-color: red;
+}
+.parent {
+  display: block;
+  width: 400px;
+  height: 400px;
+  background-color: green;
+  position: relative;
+}
+.child {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  position: absolute;
+  right: 0;
+}

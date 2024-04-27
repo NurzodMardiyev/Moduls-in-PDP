@@ -1,0 +1,109 @@
+.booking {
+  display: flex;
+  flex-direction: column;
+  background-color: #c4c4c4;
+  margin: 34px auto;
+
+  h1 {
+    @include text(#081630, "DM Serif Display", 39px, 400);
+    text-transform: capitalize;
+  }
+  p {
+    max-width: 755px;
+    @include text(rgba(0, 0, 0, 0.66), "Roboto", 24px, 400);
+  }
+}
+
+.icon__box {
+  display: flex;
+  gap: 39px;
+  justify-content: space-between;
+  margin: 45px auto;
+  flex-wrap: wrap;
+}
+.icon {
+  width: 310px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 26px;
+  img {
+    padding: 15px 45px 15px 233px;
+  }
+}
+.icon__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include text(#fff, "Roboto", 22px, 400);
+  border-radius: 26px;
+  cursor: pointer;
+  background-color: #21408e;
+  width: 152.775px;
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .booking {
+    h1 {
+      @include text(#081630, "DM Serif Display", 28px, 400);
+      text-transform: capitalize;
+
+      margin-top: 26px;
+    }
+    p {
+      max-width: 755px;
+      @include text(rgba(0, 0, 0, 0.66), "Roboto", 20px, 400);
+    }
+  }
+  .icon {
+    width: 146.677px;
+    height: 33.282px;
+    img {
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      margin-left: auto;
+      margin-right: 15px;
+    }
+  }
+  .icon__btn {
+    @include text(#fff, "Roboto", 18px, 400);
+    width: 130px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .booking {
+    h1 {
+      @include text(#081630, "DM Serif Display", 14px, 400);
+      margin-top: 26px;
+      text-transform: capitalize;
+    }
+    p {
+      max-width: 755px;
+      @include text(rgba(0, 0, 0, 0.66), "Roboto", 10px, 400);
+    }
+  }
+  .icon__box {
+    gap: 9px;
+    margin: 15px auto;
+    // flex-wrap: wrap;
+  }
+  .icon {
+    width: 69px;
+    height: 16px;
+    img {
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      margin-left: auto;
+      margin-right: 5px;
+    }
+  }
+  .icon__btn {
+    @include text(#fff, "Roboto", 10px, 400);
+    width: 90px;
+  }
+}

@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:wght@300;400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header::after,
+#header::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#main::after,
+#main::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#footer::after,
+#footer::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  max-width: 1299px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 832px;
+    margin: auto;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 384px;
+    margin: auto;
+    padding: 0 15px;
+  }
+}
+@font-face {
+  font-family: "Bodoni MT";
+  src: url("BodoniMT-Italic.woff2") format("woff2"), url("BodoniMT-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bodoni MT";
+  src: url("BodoniMT-Bold.woff2") format("woff2"), url("BodoniMT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bodoni MT";
+  src: url("BodoniMT.woff2") format("woff2"), url("BodoniMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bodoni MT";
+  src: url("BodoniMT.woff2") format("woff2"), url("BodoniMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bodoni MT";
+  src: url("BodoniMT-BoldItalic.woff2") format("woff2"), url("BodoniMT-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.logo {
+  margin-right: auto;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 9999;
+}
+
+.menu {
+  display: flex;
+  margin-right: 88px;
+  gap: 30px;
+}
+.menu li {
+  position: relative;
+}
+.menu li a {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 5px 0 0;
+}
+.menu li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #f1bc00;
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  transition: all 0.3s ease;
+}
+.menu .active {
+  position: relative;
+}
+.menu .active a::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #f1bc00;
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+}
+.menu li:hover a::after {
+  width: 100%;
+}
+
+.signIn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.signIn .contact__icon {
+  width: 40px;
+  height: 40px;
+}
+.signIn .contact__icon img {
+  width: 100%;
+}
+.signIn a {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#burger {
+  display: none;
+}
+
+.burger__icon {
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  display: none;
+  cursor: pointer;
+}
+.burger__icon img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .burger__icon {
+    display: flex;
+    margin-left: 44px;
+  }
+  .menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.548);
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    z-index: 99;
+  }
+  .menu li a {
+    color: #fff;
+  }
+  #burger:checked ~ .menu {
+    transform: translateX(0%);
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    margin: 16px auto;
+  }
+  .logo {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .menu {
+    gap: 20px;
+  }
+  .menu li a {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+  }
+  .menu li a::after {
+    height: 2px;
+    bottom: -5px;
+  }
+  .menu .active a::after {
+    height: 2px;
+    bottom: -5px;
+  }
+  .signIn {
+    gap: 10px;
+  }
+  .signIn .contact__icon {
+    width: 19px;
+    height: 19px;
+  }
+  .signIn .contact__icon img {
+    width: 100%;
+  }
+  .signIn a {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .burger__icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+.hero {
+  width: 100%;
+  padding: 267px 20px 109px;
+  background-image: url(../images/banner\ lambo\ 1.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.hero__wrapper {
+  margin-left: auto;
+  max-width: 308px;
+}
+.hero__wrapper h1 {
+  color: #000;
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.hero__wrapper p {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 18px auto 20px;
+}
+.hero__wrapper button {
+  padding: 8px 30px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 15px;
+  background-color: #21408e;
+  outline: none;
+  border: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    padding: 317px 20px 28px;
+    background-position: center right -100px;
+  }
+  .hero__wrapper {
+    width: 202px;
+  }
+  .hero__wrapper h1 {
+    color: #000;
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .hero__wrapper p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 18px auto 20px;
+  }
+  .hero__wrapper button {
+    padding: 4px 15px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    background-position: center right;
+    padding: 114px 15px 6px;
+  }
+  .hero__wrapper {
+    width: 110px;
+  }
+  .hero__wrapper h1 {
+    color: #000;
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .hero__wrapper p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 3px auto 6px;
+  }
+  .hero__wrapper button {
+    padding: 2px 12px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 10px;
+  }
+}
+.booking {
+  display: flex;
+  flex-direction: column;
+  background-color: #c4c4c4;
+  margin: 34px auto;
+}
+.booking h1 {
+  color: #081630;
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.booking p {
+  max-width: 755px;
+  color: rgba(0, 0, 0, 0.66);
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.icon__box {
+  display: flex;
+  gap: 39px;
+  justify-content: space-between;
+  margin: 45px auto;
+  flex-wrap: wrap;
+}
+
+.icon {
+  width: 310px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 26px;
+}
+.icon img {
+  padding: 15px 45px 15px 233px;
+}
+
+.icon__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 26px;
+  cursor: pointer;
+  background-color: #21408e;
+  width: 152.775px;
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .booking h1 {
+    color: #081630;
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 26px;
+  }
+  .booking p {
+    max-width: 755px;
+    color: rgba(0, 0, 0, 0.66);
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .icon {
+    width: 146.677px;
+    height: 33.282px;
+  }
+  .icon img {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  .icon__btn {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 130px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .booking h1 {
+    color: #081630;
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 26px;
+    text-transform: capitalize;
+  }
+  .booking p {
+    max-width: 755px;
+    color: rgba(0, 0, 0, 0.66);
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .icon__box {
+    gap: 9px;
+    margin: 15px auto;
+  }
+  .icon {
+    width: 69px;
+    height: 16px;
+  }
+  .icon img {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 5px;
+  }
+  .icon__btn {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 90px;
+  }
+}/*# sourceMappingURL=style.css.map */

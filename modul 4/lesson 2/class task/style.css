@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+button {
+  font-size: 30px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.changeBtn {
+  background-color: aqua;
+  padding: 15px 45px;
+}

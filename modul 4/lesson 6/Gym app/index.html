@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .section-bg {
+        background-color: rgb(46, 46, 46);
+      }
+      .modal {
+        --bs-modal-width: 700px;
+      }
+    </style>
+  </head>
+  <body class="bg-dark">
+    <section class="section-bg text-white w-100">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">GYM bro</a>
+            <button
+              class="navbar-toggler border-primary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white"
+                    aria-current="page"
+                    href="#"
+                    data-page="members"
+                    >Members</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white"
+                    aria-current="page"
+                    href="#"
+                    data-page="membership"
+                    >Add Membership</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-primary text-white"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Members -->
+    <div id="members" class="w-100">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <!-- Form -->
+          <form id="membersForm">
+            <h2 class="text-light text-center mt-4">Add Members</h2>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Fullname: </span>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="fullname"
+                required
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Gender: </span>
+              <select class="form-select" id="inputGroupSelect02">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Birthdate: </span>
+              <input
+                type="date"
+                id="birthdate"
+                class="form-control"
+                aria-label="birthdate"
+                required
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Email: </span>
+              <input
+                type="email"
+                class="form-control"
+                aria-label="email"
+                required
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Adress: </span>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="adress"
+                required
+              />
+            </div>
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-primary text-white">Add Member</button>
+            </div>
+          </form>
+          <!-- End Form -->
+
+          <!-- Table -->
+          <table class="table mt-3 w-100">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Fullname</th>
+                <th scope="col">Birthdate</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Email</th>
+                <th scope="col">Adress</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="membersList" class="w-100"></tbody>
+          </table>
+          <!-- End of Table -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Modalka -->
+    <div class="modal w-100" tabindex="-1" id="memberModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="memberModalTitle">
+              Ibrohim To'raboyev
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="memberShipAddForm">
+              <div class="input-group d-flex gap-2 mb-3">
+                <input type="date" class="form-control" aria-label="From" />
+                <input type="date" class="form-control" aria-label="From" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="price"
+                  aria-label="From"
+                />
+                <input type="hidden" name="userId" id="memberId" />
+                <button class="btn btn-primary">Add</button>
+              </div>
+            </form>
+
+            <table class="table mt-3 w-100">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">From</th>
+                  <th scope="col">To</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody id="memberShipsList" class="w-100"></tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modal -->
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

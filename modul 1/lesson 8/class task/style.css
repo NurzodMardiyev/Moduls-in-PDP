@@ -1,0 +1,23 @@
+.box {
+  display: inline-block;
+  width: 400px;
+}
+
+.parent {
+  height: 1000px;
+  width: 100%;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.child {
+  width: 350px;
+  border: 1px solid black;
+  background-color: rgb(129, 129, 22);
+  color: #fff;
+  
+}

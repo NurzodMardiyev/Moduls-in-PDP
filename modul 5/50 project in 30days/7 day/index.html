@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+      }
+      .playstation5::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: rgb(4, 0, 255);
+        opacity: 0.5;
+        transition: all 0.3s;
+      }
+      .playstation5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        background: url(https://givemegame.ru/upload/iblock/79f/79f771961cb7230cbfa814ef0718739f.jpg);
+        background-color: rgba(0, 0, 0, 1);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.3s;
+      }
+      .content {
+        z-index: 999;
+        color: #fff;
+        font-size: 26px;
+        text-align: center;
+      }
+      .btn {
+        padding: 15px 50px;
+        border: 1px solid white;
+        text-transform: uppercase;
+        background-color: inherit;
+        color: white;
+      }
+      .xBox::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: rgb(2, 2, 2);
+        opacity: 0.5;
+        transition: all 0.3s;
+      }
+      .xBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        background: url(https://givemegame.ru/upload/iblock/79f/79f771961cb7230cbfa814ef0718739f.jpg);
+        background-color: rgba(0, 0, 0, 1);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.3s;
+      }
+
+      .hover-left .playstation5,
+      .hover-left .playstation5::before {
+        width: 75%;
+      }
+      .hover-left .xBox,
+      .hover-left .xBox::before {
+        width: 25%;
+      }
+      .hover-right .playstation5,
+      .hover-right .playstation5::before {
+        width: 25%;
+      }
+      .hover-right .xBox,
+      .hover-right .xBox::before {
+        width: 75%;
+      }
+      @media screen and (max-width: 654px) {
+        h1 {
+          font-size: 24px;
+        }
+        .btn {
+          font-size: 10px;
+          padding: 10px 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="playstation5">
+        <div class="content">
+          <h1>Playstation 5</h1>
+          <button class="btn">buy now</button>
+        </div>
+      </div>
+      <div class="xBox">
+        <div class="content">
+          <h1>X Box</h1>
+          <button class="btn">buy now</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

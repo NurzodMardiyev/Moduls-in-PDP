@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do Proekt</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark">
+    <!--* Create User Information -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="card rounded-0">
+            <div class="card-header fw-bolder">Users Information</div>
+            <ul id="todosList" class="list-group list-group-flush">
+              <!-- ? defoult ui -->
+              <!-- <li class="list-group-item d-flex justify-content-between">
+                <span>1 User Information</span>
+                <span>2023-12-06</span>
+              </li> -->
+
+              <!-- ? after duble clicked ui -->
+              <!-- <li class="list-group-item d-flex">
+                <div class="input-group w-50">
+                  <input
+                    type="text"
+                    class="form-control rounded-0 edit-user"
+                    placeholder="Edit user information"
+                    aria-describedby="basic-addon2"
+                  />
+                  <buttom class="btn btn-info rounded-0" id="basic-addon2"
+                    >Save</buttom
+                  >
+                </div>
+                <div class="w-50 d-flex justify-content-end gap-1">
+                  <button class="btn btn-success rounded-0">Done</button>
+                  <button class="btn btn-danger rounded-0">Dalete</button>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--* Add User Information -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <form id="todoForm" class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control rounded-0"
+              placeholder="Username"
+              aria-label="Username"
+            />
+            <span class="input-group-text">Time: </span>
+            <input type="date" class="form-control" aria-label="Time" />
+            <button class="btn btn-success border-0 rounded-0">Add Todo</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--* Users Done Information -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="card rounded-0">
+            <div class="card-header fw-bolder">Done Users</div>
+            <ul id="complatedTodos" class="list-group list-group-flush">
+              <!-- <li class="list-group-item">1 User Done Information</li> -->
+              <!-- <li class="list-group-item d-flex align-items-center">
+                <div class="input-group w-50">1 User Done Information</div>
+                <div class="w-50 d-flex justify-content-end gap-1">
+                  <button class="btn btn-danger rounded-0">Dalete</button>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

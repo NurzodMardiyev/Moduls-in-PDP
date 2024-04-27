@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Main css -->
+    <link
+      rel="stylesheet"
+      href="https://caexuzbekistan.com/assets/css/style.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://caexuzbekistan.com/assets/images/favicon-caex.png"
+    />
+    <title>CAEx Uzbekistan</title>
+  </head>
+  <div class="ml-2 mr-2 container"></div>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__wrapper" data-aos="fade-down">
+        <a href="https://caexuzbekistan.com" class="logo" id="logo">
+          <img
+            src="https://caexuzbekistan.com/uploads/files/2023-12-18/9dAjX96D9ORq5jre9TIJMGdeQ0Q18XtcCSx0ZmU2.svg"
+            alt="CAEx Uzbekistan logo"
+            width="328"
+          />
+        </a>
+
+        <ul class="nav__list" id="menu">
+          <li class="nav__list__item">
+            <a href="https://caexuzbekistan.com/about" class="">
+              Kompleks haqida
+            </a>
+          </li>
+          <li class="nav__list__item">
+            <a href="https://caexuzbekistan.com/events" class="">
+              Tadbirlar taqvimi
+            </a>
+          </li>
+          <li class="nav__list__item link__dropdown">
+            <a class=""> Qatnashchilar </a>
+            <ul class="link__dropdown-menu">
+              <li>
+                <a href="https://caexuzbekistan.com/members"
+                  >Stendni bron qilish</a
+                >
+              </li>
+              <li>
+                <a href="https://caexuzbekistan.com/map"
+                  >Ko&#039;rgazma markazining devor zirhlari diagrammasi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.tripadvisor.ru/Hotels-g293968-Tashkent_Tashkent_Province-Hotels.html"
+                  target="_blank"
+                  >CAEx yaqinidagi mehmonxonalar</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav__list__item link__dropdown">
+            <a class=""> Mehmonlar </a>
+            <ul class="link__dropdown-menu">
+              <li>
+                <a href="https://caexuzbekistan.com/guests"
+                  >Mehmon bo&#039;lish</a
+                >
+              </li>
+              <li>
+                <a href="https://caexuzbekistan.com/map"
+                  >Ko&#039;rgazma markazining devor zirhlari diagrammasi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.tripadvisor.ru/Hotels-g293968-Tashkent_Tashkent_Province-Hotels.html"
+                  target="_blank"
+                  >CAEx yaqinidagi mehmonxonalar</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav__list__item link__dropdown">
+            <a class=""> Tashkilotchilar </a>
+            <ul class="link__dropdown-menu">
+              <li>
+                <a href="https://caexuzbekistan.com/map">Sayt haqida</a>
+              </li>
+              <li>
+                <a href="https://caexuzbekistan.com/organizators"
+                  >Ijara arizasi</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav__list__item">
+            <a href="https://caexuzbekistan.com/articles" class="">
+              Yangiliklar
+            </a>
+          </li>
+          <li class="nav__list__item">
+            <a href="https://caexuzbekistan.com/contact" class=""> Aloqa </a>
+          </li>
+          <li class="nav__list__item dropdown">
+            <button id="dropdownBtn" class="btn" type="button">
+              <img
+                src="https://caexuzbekistan.com/assets/images/uz.png"
+                alt="uzbek"
+                width="12px"
+              />
+              Uz
+            </button>
+            <ul class="dropdown-menu">
+              <li class="option">
+                <a href="https://caexuzbekistan.com?language=en">
+                  <img
+                    src="https://caexuzbekistan.com/assets/images/en.png"
+                    alt="english"
+                    width="12px"
+                  />
+                  En
+                </a>
+              </li>
+              <li class="option">
+                <a href="https://caexuzbekistan.com?language=ru">
+                  <img
+                    src="https://caexuzbekistan.com/assets/images/ru.png"
+                    alt="russian"
+                    width="12px"
+                  />
+                  Ru
+                </a>
+              </li>
+              <li class="option">
+                <a href="https://caexuzbekistan.com?language=uz">
+                  <img
+                    src="https://caexuzbekistan.com/assets/images/uz.png"
+                    alt="uzbek"
+                    width="12px"
+                  />
+                  Uz
+                </a>
+              </li>
+              <li class="option">
+                <a href="https://caexuzbekistan.com?language=ger">
+                  <img
+                    src="https://caexuzbekistan.com/assets/images/ge.png"
+                    alt="german"
+                    width="12px"
+                  />
+                  Ge
+                </a>
+              </li>
+              <li class="option">
+                <a href="https://caexuzbekistan.com?language=chin">
+                  <img
+                    src="https://caexuzbekistan.com/assets/images/cn.png"
+                    alt="chinese"
+                    width="12px"
+                  />
+                  Cn
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button id="nav__btn">
+          <img
+            src="https://caexuzbekistan.com/assets/images/icon_bars.svg"
+            alt="menu"
+          />
+        </button>
+      </div>
+    </header>
+    <!-- End of Header -->
+
+    <main>
+      <!-- Hero section -->
+      <section
+        class="hero"
+        style="
+          background-image: url(https://caexuzbekistan.com/uploads/files/2023-12-25/R16HKdL5PbHl9rAelvfmf3vpvpfWJh2rqMBXivUq.jpg);
+        "
+      >
+        <!--<span class="hero__shape" data-aos="fade-up"></span>-->
+        <div class="hero__content" data-aos="fade-up">
+          <h1 class="hero__content__title">
+            CAEx <span class="inner__text">Uzbekistan</span>
+          </h1>
+          <p class="hero__content__description">
+            Pavilyonni har qanday loyiha va formatga moslashtirishga imkon
+            beradigan noyob va ko&#039;p funktsiyali biznes arenasi
+          </p>
+        </div>
+      </section>
+      <!-- End of Hero section -->
+
+      <!-- Info section -->
+      <section class="info" style="margin-top: 160px">
+        <div
+          class="info__img"
+          data-aos="fade-right"
+          style="
+            background-image: url(https://caexuzbekistan.com/uploads/files/2024-01-07/cKF88bcauQJjVpsqFOouJyXjNMrD9YzMDmH1QeiY.jpg);
+          "
+        ></div>
+        <div class="info__content" data-aos="fade-up">
+          <h2 data-aos="fade-left">Ko'rgazma <span>majmuasi</span></h2>
+          <p data-aos="fade-up">
+            Central Asian Expo Uzbekistan xalqaro koʻrgazma markazi Markaziy
+            Osiyodagi eng yirik va zamonaviy koʻrgazma maydonlaridan biri
+            boʻlib, UFI Global koʻrgazma sanoati assotsiatsiyasi aʼzosi
+            hisoblanadi. Xalqaro koʻrgazmalar va tadbirlar assotsiatsiyasiga
+            (IAEE) aʼzolik CAEx tomonidan koʻrsatilayotgan xizmatlar darajasi
+            xalqaro standartlarga javob berishini koʻrsatuvchi sifat muhri
+            hisoblanadi.
+          </p>
+        </div>
+      </section>
+      <!-- End of Info section -->
+
+      <!-- Statistics section -->
+      <section class="statistics">
+        <div class="container">
+          <ul class="statistics__list">
+            <li class="statistics__list-item" data-aos="fade-right">
+              <span class="number">
+                <span class="value">23,000</span>
+                <span>м<sup>2</sup></span>
+              </span>
+              <span class="caption">Umumiy maydoni</span>
+            </li>
+            <li class="statistics__list-item">
+              <hr class="line" data-aos="fade-down" />
+            </li>
+            <li class="statistics__list-item" data-aos="fade-up">
+              <span class="number" style="text-align: center">
+                <span class="value">4</span>
+              </span>
+              <span class="caption"
+                >O&#039;rnatish eshigi o&#039;lchami 6x4,7</span
+              >
+            </li>
+            <li class="statistics__list-item">
+              <hr class="line" data-aos="fade-down" />
+            </li>
+            <li class="statistics__list-item" data-aos="fade-left">
+              <span class="number">
+                <span class="value">18,000</span>
+                <span>м<sup>2</sup></span>
+              </span>
+              <span class="caption">Ko&#039;rgazma pavilyoni maydoni</span>
+            </li>
+          </ul>
+          <ul
+            class="statistics__list"
+            style="justify-content: center; gap: 117px; margin-top: 80px"
+          >
+            <li class="statistics__list-item" data-aos="fade-right">
+              <span class="number">
+                <span class="value">700</span>
+                <span><sup>+</sup></span>
+                <span class="value">15</span>
+                <span>VIP</span>
+              </span>
+              <span class="caption">Avto turargoh</span>
+            </li>
+            <li class="statistics__list-item">
+              <hr class="line" data-aos="fade-down" />
+            </li>
+            <li class="statistics__list-item" data-aos="fade-up">
+              <span class="number">
+                <span class="value">3</span>
+                <span
+                  >ming/<span>м<sup>2</sup></span></span
+                >
+              </span>
+              <span class="caption">Ruxsat etilgan pol yuki</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- End of Statistics section -->
+
+      <!-- Info section -->
+      <section class="info reverseInfo" style="margin-top: 0">
+        <div
+          class="info__img"
+          data-aos="fade-left"
+          style="
+            background-image: url(https://caexuzbekistan.com/uploads/files/2024-01-07/epjRKiJLjaM86Zz2x6pqx2mjmCnfGDlCCE8Z3ohD.jpg);
+          "
+        ></div>
+        <div class="info__content" data-aos="fade-right">
+          <h2 data-aos="fade-up">Bizning <span>vazifamiz</span></h2>
+          <p data-aos="fade-right">
+            CAEx Uzbekistan ko‘rgazma markazining vazifasi odamlar, g‘oyalar va
+            texnologiyalarni birlashtirish uchun innovatsion va ilhomlantiruvchi
+            platforma yaratishdan iborat. Biz sanʼat, madaniyat, fan va
+            biznesdagi xilma-xillikni qoʻllab-quvvatlash uchun ijodiy va ijodiy
+            hamjamiyatlar uchrashadigan Markaziy Osiyoning yetakchi markaziga
+            aylanishga intilamiz.
+          </p>
+        </div>
+      </section>
+      <!-- End of Info section -->
+
+      <div class="bg__light">
+        <!-- Events section -->
+        <section class="events">
+          <div class="container">
+            <h3 class="events-title" data-aos="fade-right">
+              Eng yaqin tadbirlar
+              <img
+                src="https://caexuzbekistan.com/assets/images/horizontalArrow.svg"
+                alt="scroll"
+              />
+            </h3>
+            <div class="events__wrapper__top">
+              <div class="events__wrapper" data-aos="fade-up">
+                <a
+                  href="https://caexuzbekistan.com/event/22"
+                  class="panel"
+                  style="
+                    background-image: url(https://caexuzbekistan.com/uploads/files/2024-02-15/pbTdg9HoF2G2GyxZW4QTARsxaxKzaverNwV2hL5G.png);
+                  "
+                >
+                  <span class="date">27.02.2024</span>
+                  <h4>Mey Maskning CAEx Uzbekistandagi nutqi</h4>
+                </a>
+                <a
+                  href="https://caexuzbekistan.com/event/16"
+                  class="panel"
+                  style="
+                    background-image: url(https://caexuzbekistan.com/uploads/files/2024-02-12/qfgLPxw8gE7pLyHZJ0xuLVzSZUB4fBVJD6kANwY3.png);
+                  "
+                >
+                  <span class="date">19.04.2024</span>
+                  <h4>Sibir Wellness ko&#039;rgazma tashkilotchisi</h4>
+                </a>
+                <a
+                  href="https://caexuzbekistan.com/event/8"
+                  class="panel"
+                  style="
+                    background-image: url(https://caexuzbekistan.com/uploads/files/2024-01-09/YeoRP3LrYo042VcBLWsSJyflueYc3KRRvde1pVfn.jpg);
+                  "
+                >
+                  <span class="date">25.04.2024</span>
+                  <h4>“CAEx Ko&#039;chmas Mulk 2024” xalqaro koʻrgazmasi</h4>
+                </a>
+                <a
+                  href="https://caexuzbekistan.com/event/17"
+                  class="panel"
+                  style="
+                    background-image: url(https://caexuzbekistan.com/uploads/files/2024-02-12/XpLuVpUcLshPoUXlTEQ3uGsO9kghiulHCMYonw58.png);
+                  "
+                >
+                  <span class="date">06.05.2024</span>
+                  <h4>Ko&#039;rgazma tashkilotchisi BioStom</h4>
+                </a>
+                <a
+                  href="https://caexuzbekistan.com/event/7"
+                  class="panel"
+                  style="
+                    background-image: url(https://caexuzbekistan.com/uploads/files/2024-01-08/cPpB9W7Vbd3KnyRmp43dkHnHonj41BlEZsMetLrK.jpg);
+                  "
+                >
+                  <span class="date">15.05.2024</span>
+                  <h4>CAEx Mebel &amp; Decor 2024 xalqaro ko&#039;rgazmasi</h4>
+                </a>
+              </div>
+              <div class="line_enents"></div>
+            </div>
+          </div>
+        </section>
+        <!--End of Events section -->
+
+        <!-- Photo-Swiper section -->
+        <section class="photo__swiper">
+          <div class="container">
+            <h2 class="photo__swiper-title" data-aos="fade-right">
+              So&#039;nggi tadbirlarning rasmiy hisoboti
+            </h2>
+
+            <div class="photo__swiper-wrapper">
+              <!-- Swiper slide -->
+              <div class="swiper mySwiper lastEventSwiper">
+                <!---->
+                <div class="swiper-wrapper" data-aos="fade-up">
+                  <div class="swiper-slide">
+                    <img
+                      src="https://caexuzbekistan.com/uploads/files/2024-01-08/vOcFfntlYaO0gRke9fbzMmJkMc9ynSNkY2VX8Ln3.png"
+                      alt="CAEx Mebel va Decor 2023"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://caexuzbekistan.com/uploads/files/2024-01-08/LRfmmxNH856TqTKBupZCVbknri0ojIJYeLfDXLwP.png"
+                      alt="CAEx Mebel va Decor 2023"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://caexuzbekistan.com/uploads/files/2024-01-08/TBukkZ5su9mMEQalPFUcdRJYx6hcaYGPtTiFbBNV.png"
+                      alt="CAEx Mebel va Decor 2023"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://caexuzbekistan.com/uploads/files/2024-01-08/zxRAP5ugayB26eCaXYPVXiglcSxKu6Cso22HUbAl.png"
+                      alt="CAEx Mebel va Decor 2023"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://caexuzbekistan.com/uploads/files/2024-01-08/zGyeD7dZP1fBDXWQZHglUVgHkV79Yc8qq0d2i2pL.png"
+                      alt="CAEx Mebel va Decor 2023"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Enf of Swiper slide -->
+
+              <!-- Photo swiper content -->
+              <div class="photo__swiper-content">
+                <span class="inner__data" data-aos="fade-left">22.09.2023</span>
+                <h3 data-aos="fade-right">CAEx Mebel va Decor 2023</h3>
+                <p data-aos="fade-up">
+                  22-24 sentyabr kunlari CAEx Furniture &amp; Decor 2023
+                  birinchi xalqaro ko&#039;rgazmasi bo&#039;lib o&#039;tdi.Ushbu
+                  ko&#039;rgazma uy uchun mebel, dekor va boshqa elementlar
+                  sohasiga bag&#039;ishlangan edi.
+                </p>
+                <div class="swiper-content__btn" data-aos="fade-left">
+                  <button class="content__btns prev"></button>
+                  <button class="content__btns next"></button>
+                </div>
+              </div>
+              <!-- End of photo swiper content -->
+            </div>
+          </div>
+        </section>
+        <!-- End of Photo-Swiper section -->
+      </div>
+
+      <!-- Vendors animation started -->
+      <section class="animation__section">
+        <div class="container animation__wrapper">
+          <h2>Axborot hamkorlari</h2>
+          <ul class="animation__list">
+            <li class="animation__list-item">
+              <a href="https://worldexpo.pro/">
+                <img
+                  src="https://caexuzbekistan.com/uploads/files/2024-01-16/70OMwr5EIH716NnjFQ1pbNx7zQcfUGC7oZx4BcS0.png"
+                  alt="Partner"
+                />
+              </a>
+            </li>
+            <li class="animation__list-item">
+              <a href="http://www.totalexpo.ru/">
+                <img
+                  src="https://caexuzbekistan.com/uploads/files/2024-01-29/cvjIcy2zlojDNWgYhaswoLzk6UJfU28HnUkJIX3A.jpg"
+                  alt="Partner"
+                />
+              </a>
+            </li>
+            <li class="animation__list-item">
+              <a href="https://exposale.net/ru">
+                <img
+                  src="https://caexuzbekistan.com/uploads/files/2024-01-16/9oFHDwSW4G21I2qVefv3aJ0ufLkRr7CLLYjJ9FFj.png"
+                  alt="Partner"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Vendor animation finished -->
+
+      <!-- Contact section -->
+      <section class="contact">
+        <div class="container contact__wrapper">
+          <!-- Feedback form -->
+          <div class="feedback">
+            <h2>Qayta aloqa</h2>
+            <p>Savollar qoldimi yoki qatnashishni xohlaganmisiz?</p>
+
+            <form
+              action="https://caexuzbekistan.com/message"
+              class="feedback__form"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_token"
+                value="upIpkUYFsun8AZ2fiqMe5azdDxYdpuLHLVwrgixq"
+              />
+              <!-- Input name -->
+              <label for="input-name">
+                Sizning ismingiz
+                <input
+                  type="text"
+                  id="input-name"
+                  name="name"
+                  placeholder="Ismingizni kiriting*"
+                  required
+                />
+              </label>
+
+              <!-- Input phone number -->
+              <label for="input-phone-number">
+                Sizning telefon raqamingiz
+                <input
+                  type="text"
+                  name="phone"
+                  id="input-phone-number"
+                  placeholder="Telefon raqamingizni kiriting*"
+                  required
+                />
+              </label>
+
+              <!-- Select option -->
+              <label for="selected">
+                Tadbir
+                <select id="selected" name="event_id" required>
+                  <option value="" selected>
+                    Tadbirni tark etish uchun tanlang*
+                  </option>
+                  <option value="22">
+                    Mey Maskning CAEx Uzbekistandagi nu...
+                  </option>
+                  <option value="21">
+                    &quot;CAEx Black Friday&quot; xalqaro ko&#039;rgaz...
+                  </option>
+                  <option value="20">
+                    Ko&#039;rgazma tashkilotchisi - Team&amp;Co
+                  </option>
+                  <option value="18">
+                    Ko&#039;rgazma tashkilotchisi - Arab Int...
+                  </option>
+                  <option value="17">
+                    Ko&#039;rgazma tashkilotchisi BioStom
+                  </option>
+                  <option value="16">
+                    Sibir Wellness ko&#039;rgazma tashkilotc...
+                  </option>
+                  <option value="14">
+                    Ko&#039;rgazma tashkilotchisi - Messe Fr...
+                  </option>
+                  <option value="13">
+                    Ko&#039;rgazma tashkilotchisi - Messe Fr...
+                  </option>
+                  <option value="12">
+                    Ko&#039;rgazma tashkilotchisi - Messe Fr...
+                  </option>
+                  <option value="11">
+                    Международная выставка “CAEx Build...
+                  </option>
+                  <option value="10">
+                    &quot;CAEx Franchise&quot; xalqaro ko&#039;rgazmas...
+                  </option>
+                  <option value="9">
+                    “CAEx Food &amp; Packaging” xalqaro koʻ...
+                  </option>
+                  <option value="8">
+                    “CAEx Ko&#039;chmas Mulk 2024” xalqaro k...
+                  </option>
+                  <option value="7">
+                    CAEx Mebel &amp; Decor 2024 xalqaro ko&#039;...
+                  </option>
+                </select>
+              </label>
+
+              <!-- Input message -->
+              <label for="inputName">
+                Xabar
+                <input
+                  type="text"
+                  name="message"
+                  id="inputName"
+                  placeholder="Xabar matnini kiriting"
+                  required
+                />
+              </label>
+
+              <button type="submit" class="feedback__form-btn">
+                <span>Yuborish</span>
+              </button>
+            </form>
+          </div>
+          <!-- End of Feedback form -->
+          <!-- Contact info -->
+          <div class="contact__content">
+            <iframe
+              src="https://yandex.uz/map-widget/v1/?ll=69.430164%2C41.328926&mode=search&oid=187997993149&ol=biz&z=14.28"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- End of Contact section -->
+
+      <!-- Footer section -->
+      <footer class="footer" style="background: #2d2e46">
+        <div class="container">
+          <!-- Footer navbar links -->
+          <div class="footer__navbar">
+            <div>
+              <a
+                href="https://caexuzbekistan.com"
+                class="logo"
+                id="logo"
+                style="display: inline-block"
+              >
+                <img
+                  src="https://caexuzbekistan.com/uploads/files/2023-12-18/fXE7Nr6wO3Cf909KFxfu7ijvYFHzYzj76JIddNug.svg"
+                  alt="CAEx Uzbekistan logo"
+                  height="60"
+                  style="width: auto"
+                />
+              </a>
+
+              <span>
+                <img
+                  src="https://caexuzbekistan.com/assets/images/IAEE__ufi.png"
+                  alt="IAEE"
+                  height="50"
+                  style="width: auto; filter: invert(1)"
+                />
+              </span>
+            </div>
+
+            <ul class="footer__navbar__list">
+              <li class="footer__navbar__list-item">
+                <a href="https://caexuzbekistan.com/about">Kompleks haqida</a>
+              </li>
+              <li class="footer__navbar__list-item">
+                <a href="https://caexuzbekistan.com/events"
+                  >Tadbirlar taqvimi</a
+                >
+              </li>
+              <li class="footer__navbar__list-item">
+                <a href="https://caexuzbekistan.com/articles">Yangiliklar</a>
+              </li>
+              <li class="footer__navbar__list-item">
+                <a href="https://caexuzbekistan.com/contact">Aloqa</a>
+              </li>
+            </ul>
+          </div>
+          <!-- End of footer navbar links -->
+
+          <!-- Contact address -->
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <h3>Manzil</h3>
+              <span
+                >Toshkent, Mirzo Ulug&#039;bek tumani, MSG &#039;Barkamol&#039;,
+                Milliy Bog ko&#039;chasi, uy №1. Mo&#039;ljal: Akfa
+                Universiteti.</span
+              >
+            </div>
+            <div class="footer__contact-item">
+              <h3>Telefon</h3>
+              <a href="tel:+998781133333">+998 (78) 113-33-33</a>
+            </div>
+            <div class="footer__contact-item">
+              <h3>Elektron pochta</h3>
+              <a
+                href="/cdn-cgi/l/email-protection#89e0e7efe6c9eae8ecf1a4fcf3ebece2e0fafde8e7a7eae6e4"
+                ><span
+                  class="__cf_email__"
+                  data-cfemail="20494e464f60434145580d555a42454b495354414e0e434f4d"
+                  >[email&#160;protected]</span
+                ></a
+              >
+            </div>
+          </div>
+          <!-- End of Contact address -->
+
+          <!-- Footer line -->
+          <hr class="footer-line" />
+          <!-- Footer line end of -->
+
+          <!-- Footer socials links -->
+          <div class="footer__socials">
+            <ul class="footer__socials-oferta">
+              <li>
+                <a href="/">Maxfiylik siyosati</a>
+              </li>
+              <li>
+                <a href="/">Qatnashchining taklifi</a>
+              </li>
+            </ul>
+
+            <ul class="footer__socials__list">
+              <li class="footer__socials__list-item">
+                <a target="_blank" href="https://t.me/caexuzbekistan"
+                  >Telegram</a
+                >
+              </li>
+              <li class="footer__socials__list-item">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/caexuzbekistan/"
+                  >Facebook</a
+                >
+              </li>
+              <li class="footer__socials__list-item">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/caex_uzbekistan/"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- End of footer socials links -->
+        </div>
+      </footer>
+      <!-- End of footer section -->
+    </main>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="//code.jivosite.com/widget/RP34hTA7JW" async></script>
+    <!-- Swiper scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Main scripts -->
+    <script src="https://caexuzbekistan.com/assets/js/main.js"></script>
+    <script src="https://caexuzbekistan.com/assets/js/schema.js"></script>
+  </body>
+</html>

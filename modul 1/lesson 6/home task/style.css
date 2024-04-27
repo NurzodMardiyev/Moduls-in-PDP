@@ -1,0 +1,153 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+}
+body {
+  background-color: #323647;
+}
+.container {
+    width: 1006px;
+    margin: auto;
+}
+a {
+  text-decoration: none;
+}
+.enterance {
+  font-size: 0.875rem;
+  color: #898A95;
+  margin-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  display: block;
+}
+.enter_title {
+  font-size: 1.875rem;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.enter_info {
+  color: #9697A2;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 35px;
+  line-height: 28px;
+}
+.enter_href {
+  color: #F9BE5C;
+  font-size: 1.125rem;
+  text-decoration: underline;
+  font-family: 'Open Sans', sans-serif;
+  display: inline-flex;
+  align-items: center;
+}
+.enter_href img {
+  margin-left: 10px;
+  width: 17px;
+  height: 14px;
+}
+
+/* -----------Contact Us------------ */
+
+#contact_us {
+  width: 100%;
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+#contact_us .container {
+  display: flex;
+}
+#contact_us .container > div {
+  width: 50%;
+}
+#contact_us form {
+  color: #fff;
+}
+#contact_us form label {
+  font-size: 1.25rem;
+  display: block;
+}
+#contact_us form input {
+  width: 100%;
+  outline: none;
+  background-color: inherit;
+  border: none;
+  padding: 10px;
+  border-bottom: 1px solid #767883;
+  display: block;
+  color:#93949D;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+#contact_us form > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact_us form > div img {
+  margin-left: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 790px) {
+  #contact_us {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #contact_us .container {
+    width: 100%;
+    padding: 0 20px;
+    margin:auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  #contact_us .container > div {
+    width: 100%;
+  }
+  
+  #contact_us .enterance {
+    font-size: 0.675rem;
+    margin-bottom: 10px;
+  }
+  #contact_us .enter_title {
+    padding: 0 20px;
+    font-size: 1.075rem;
+    margin-bottom: 15px;
+  }
+  
+  #contact_us .enter_info {
+    font-size: 0.875rem;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    line-height: 20px;
+  }
+  #contact_us .enter_href {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    display: block;
+    margin-top: 0px;
+  }
+  #contact_us form label {
+    font-size: 0.875rem;
+    text-align: start;
+  }
+  #contact_us form input {
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+  }
+  #contact_us form > div {
+    width: 100%;
+  }
+  #contact_us form > div img {
+    margin-left: 10px;
+    width: 15px;
+  }
+}
+
